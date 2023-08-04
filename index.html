@@ -4,67 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Form</title>
+    <title>Delivery de Comida e Mercado - Ifood</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://kit.fontawesome.com/c258f67a9a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <main>
-        <form action="">
-            <h1>Form</h1>
-            <div class="fieldText">
-                <label for="">
-                    <input type="text" name="user" placeholder="Tap your name ...">
-                </label>
+    <div class="mainContainer">
+        <div class="secondContainer">
+            <div class="leftContainer">
+                <div class="logo">
+                    <img src="./icons/ifood.png" alt="ifood_logo">
+                </div>
+                <img src="./icons/Bg-Entregamos.png" alt="ifood_art">
             </div>
-            <div class="fieldText">
-                <label for="">
-                    <input type="email" name="email" placeholder="Tap your email ...">
-                </label>
+            <div class="rightContainer">
+                <div class="mainLoginContainer">
+                    <div class="loginContainer">
+                        <h1>Falta pouco para matar sua fome!</h1>
+                        <h2>Como deseja continuar?</h2>
+                        <div class="socialsContainer">
+                            <a class="facebookContainer">
+                                <i class="fa-brands fa-square-facebook"></i>
+                                <h3>Continuar com o Facebook</h3>
+                            </a>
+                            <a class="googleContainer">
+                                <i class="fa-brands fa-google"></i>
+                                <h3>Continuar com o Google</h3>
+                            </a>
+                        </div>
+                        <div class="contactContainer">
+                            <button id="phone">Celular</button>
+                            <button id="email">E-mail</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="fieldText">
-                <label for="">
-                    <input type="password" name="password" placeholder="Tap your password ...">
-                </label>
-            </div>
-            <div class="fieldText">
-                <label for="">
-                    <input type="password" name="password" placeholder="Repeat your password ...">
-                </label>
-            </div>
-            <div class="fieldText">
-                <label for="">
-                    <textarea name="description" id="" cols="25" rows="10"
-                        placeholder="Say something about yourself ..."></textarea>
-                </label>
-            </div>
-            <div class="boxSelection">
-                <p>Select your gender :</p>
-                <label for="" class="radioSelection">Man
-                    <input type="radio" name="gender" value="man">
-                </label>
-                <label for="" class="radioSelection">Woman
-                    <input type="radio" name="gender" value="woman">
-                </label>
-                <label for="" class="radioSelection">Other
-                    <input type="radio" name="gender" value="other">
-                </label>
-            </div>
-            <div class="boxSelection">
-                <p>Select your main class :</p>
-                <label for="" class="radioSelection">Front-End
-                    <input type="checkbox" name="skill" value="fe">
-                </label>
-                <label for="" class="radioSelection">Back-End
-                    <input type="checkbox" name="skill" value="be">
-                </label>
-                <label for="" class="radioSelection">Full-Stack
-                    <input type="checkbox" name="skill" value="fs">
-                </label>
-            </div>
-            <input type="submit" value="Send">
-        </form>
-    </main>
+        </div>
+    </div>
 </body>
 
 </html>

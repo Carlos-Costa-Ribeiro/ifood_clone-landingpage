@@ -2,78 +2,168 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: Helvetica;
 }
 
-main {
+.mainContainer {
     height: 100vh;
     width: 100vw;
+    background-image: linear-gradient(to right, rgb(250, 150, 155), rgb(250, 75, 75));
+}
+
+.mainContainer .secondContainer {
+    height: inherit;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.secondContainer .leftContainer {
+    height: inherit;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(15, 15, 15);
+    position: relative;
 }
 
-form {
+.leftContainer .logo img {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.leftContainer img {
+    height: 500px;
+    width: auto;
+}
+
+.secondContainer .rightContainer {
+    height: inherit;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondContainer .mainLoginContainer {
+    height: 600px;
+    width: 500px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+.mainLoginContainer .loginContainer {
+    height: inherit;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 750px;
-    width: 500px;
-    border-radius: 20px;
-    background-color: rgb(34, 34, 34);
-    color: rgb(255, 255, 255);
 }
 
-form h1 {
-    margin-bottom: 50px;
+.loginContainer h1 {
     font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(36, 36, 36);
 }
 
-form .fieldText input {
-    height: 40px;
-    width: 300px;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 7px;
-    background-color: black;
-    margin-bottom: 10px;
-}
-
-form .fieldText textarea {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 7px;
-    background-color: black;
-    margin-bottom: 10px;
-}
-
-form .boxSelection {
-    height: 50px;
-    width: 300px;
-    border-radius: 5px;
-    color: rgb(185, 185, 185);
-    margin-bottom: 10px;
-}
-
-form .boxSelection label {
-    margin-bottom: 10px;
-    margin-right: 13px;
-}
-
-form .boxSelection p {
-    margin-bottom: 7px;
-}
-
-form input[type="submit"] {
-    margin-top: 30px;
-    height: 50px;
-    width: 300px;
+.loginContainer h2 {
     font-size: 25px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: rgb(185, 185, 185);
-    background-color: rgb(60, 15, 110);
-    border: 1px solid rgb(60, 15, 110);
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(92, 92, 92);
 }
+
+.loginContainer .socialsContainer {
+    height: 80px;
+    width: 315px;
+    margin-bottom: 50px;
+}
+
+.loginContainer .facebookContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 315px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: rgb(19, 21, 143);
+    cursor: pointer;
+}
+
+.loginContainer .googleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 315px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(150, 150, 150);
+    cursor: pointer;
+}
+
+.facebookContainer i {
+    font-size: 30px;
+    color: white;
+}
+
+.googleContainer i {
+    font-size: 30px;
+    color: rgb(255, 8, 0);
+}
+
+.facebookContainer h3 {
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.googleContainer h3 {
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    color: rgb(92, 92, 92);
+}
+
+.mainContainer .contactContainer {
+    height: 50px;
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactContainer button {
+    height: 40px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: rgb(65, 65, 65);
+    background-color: aliceblue;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contactContainer button:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
