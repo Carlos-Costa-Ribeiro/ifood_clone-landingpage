@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Form</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <h1>Form</h1>
+            <div class="fieldText">
+                <label for="">
+                    <input type="text" name="user" placeholder="Tap your name ...">
+                </label>
+            </div>
+            <div class="fieldText">
+                <label for="">
+                    <input type="email" name="email" placeholder="Tap your email ...">
+                </label>
+            </div>
+            <div class="fieldText">
+                <label for="">
+                    <input type="password" name="password" placeholder="Tap your password ...">
+                </label>
+            </div>
+            <div class="fieldText">
+                <label for="">
+                    <input type="password" name="password" placeholder="Repeat your password ...">
+                </label>
+            </div>
+            <div class="fieldText">
+                <label for="">
+                    <textarea name="description" id="" cols="25" rows="10"
+                        placeholder="Say something about yourself ..."></textarea>
+                </label>
+            </div>
+            <div class="boxSelection">
+                <p>Select your gender :</p>
+                <label for="" class="radioSelection">Man
+                    <input type="radio" name="gender" value="man">
+                </label>
+                <label for="" class="radioSelection">Woman
+                    <input type="radio" name="gender" value="woman">
+                </label>
+                <label for="" class="radioSelection">Other
+                    <input type="radio" name="gender" value="other">
+                </label>
+            </div>
+            <div class="boxSelection">
+                <p>Select your main class :</p>
+                <label for="" class="radioSelection">Front-End
+                    <input type="checkbox" name="skill" value="fe">
+                </label>
+                <label for="" class="radioSelection">Back-End
+                    <input type="checkbox" name="skill" value="be">
+                </label>
+                <label for="" class="radioSelection">Full-Stack
+                    <input type="checkbox" name="skill" value="fs">
+                </label>
+            </div>
+            <input type="submit" value="Send">
+        </form>
+    </main>
+</body>
+
+</html>
